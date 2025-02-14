@@ -29,7 +29,7 @@ function App() {
     {
       title: "Hola  :)",
       content:
-        "Este es el pequño detalle que tengo, para ti, justo hace un momento lo acabo de desplegar. Espero que te guste, y que pases un buen día. 🌹💝",
+        "Este es el pequeño detalle que tengo, para ti, justo hace un momento lo acabo de desplegar. Espero que te guste, y que pases un buen día. 🌹💝",
     },
     {
       title: "Mi Amor ❤️",
@@ -141,6 +141,13 @@ function App() {
         )}
       </button>
 
+      {/* Mensaje para indicar al usuario que debe hacer clic en el ícono de audio */}
+      {!isPlaying && (
+        <div className="fixed top-12 right-4 z-40 text-white text-xs bg-black/50 px-2 py-1 rounded">
+          Haz clic en el ícono de audio para activar el sonido.
+        </div>
+      )}
+
       <div className="fixed top-4 left-4 z-50 p-3 rounded-full bg-red-600/20 backdrop-blur-sm">
         <p className="text-red-300 text-sm font-medium">{currentDate}</p>
       </div>
@@ -161,7 +168,6 @@ function App() {
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto p-8 flex-grow">
-
         <div
           key={currentSlide}
           className={`transform transition-all duration-700 ease-in-out animate-slideIn ${
@@ -169,7 +175,6 @@ function App() {
           }`}
         >
           <div className="bg-black/80 backdrop-blur-sm p-8 rounded-2xl border-2 border-red-600 shadow-2xl shadow-red-600/20 relative overflow-hidden">
-
             <div className="absolute inset-0 pointer-events-none">
               {[...Array(6)].map((_, i) => (
                 <Sparkles
