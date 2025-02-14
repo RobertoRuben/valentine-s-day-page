@@ -56,7 +56,7 @@ function App() {
       content: (
         <div className="space-y-6">
           <p>
-            Como te lo digo cuando te tengo frente a mis ojos: no me arrepiento, de nada contigo. Te amo mucho, Ángeles. ¡Que tengas un buen día! 🌹💝
+            Como te lo digo cuando te tengo frente a mis ojos: no me arrepiento, de nada contigo. Te amo mucho, Angeles. ¡Que tengas un buen día! 🌹💝
           </p>
           <div className="mt-8">
             <div className="relative w-full max-w-xs aspect-square mx-auto rounded-lg overflow-hidden shadow-xl shadow-red-600/30 group hover:shadow-red-600/50 transition-shadow duration-300">
@@ -141,7 +141,6 @@ function App() {
         )}
       </button>
 
-      {/* Mensaje para indicar al usuario que debe hacer clic en el ícono de audio */}
       {!isPlaying && (
         <div className="fixed top-12 right-4 z-40 text-white text-xs bg-black/50 px-2 py-1 rounded">
           Haz clic en el ícono de audio para activar el sonido.
